@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C48238F4B0000CCE188 /* ZStackSample.swift */; };
+		E8542C4B238F4B7000CCE188 /* ListViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4A238F4B7000CCE188 /* ListViewSample.swift */; };
+		E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4C238F53A200CCE188 /* DetailView.swift */; };
 		E889FF132388F38200FEBC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889FF122388F38200FEBC2D /* AppDelegate.swift */; };
 		E889FF152388F38200FEBC2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889FF142388F38200FEBC2D /* SceneDelegate.swift */; };
 		E889FF172388F38200FEBC2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889FF162388F38200FEBC2D /* ContentView.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8542C48238F4B0000CCE188 /* ZStackSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSample.swift; sourceTree = "<group>"; };
+		E8542C4A238F4B7000CCE188 /* ListViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewSample.swift; sourceTree = "<group>"; };
+		E8542C4C238F53A200CCE188 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E889FF0F2388F38200FEBC2D /* swiftui-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E889FF122388F38200FEBC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E889FF142388F38200FEBC2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 				E889FF122388F38200FEBC2D /* AppDelegate.swift */,
 				E889FF142388F38200FEBC2D /* SceneDelegate.swift */,
 				E889FF162388F38200FEBC2D /* ContentView.swift */,
+				E8542C48238F4B0000CCE188 /* ZStackSample.swift */,
+				E8542C4A238F4B7000CCE188 /* ListViewSample.swift */,
+				E8542C4C238F53A200CCE188 /* DetailView.swift */,
 				E889FF182388F38500FEBC2D /* Assets.xcassets */,
 				E889FF1D2388F38500FEBC2D /* LaunchScreen.storyboard */,
 				E889FF202388F38500FEBC2D /* Info.plist */,
@@ -268,8 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E889FF132388F38200FEBC2D /* AppDelegate.swift in Sources */,
+				E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */,
 				E889FF152388F38200FEBC2D /* SceneDelegate.swift in Sources */,
+				E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */,
 				E889FF172388F38200FEBC2D /* ContentView.swift in Sources */,
+				E8542C4B238F4B7000CCE188 /* ListViewSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
