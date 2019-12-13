@@ -31,17 +31,18 @@ struct ListSampleView: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $detailList.isLikedOnly) {
-                    Text("Filter only liked items")
-                }
+                Text("test")
+//                Toggle(isOn: $detailList.isLikedOnly) {
+//                    Text("Filter only liked items")
+//                }
 
-                ForEach(detailList.details) { (detail) in
-                    if (!self.detailList.isLikedOnly || detail.isLiked) {
-                        NavigationLink(destination: DetailView(detail: detail)) {
-                            Row(detail: detail)
-                        }
-                    }
-                }
+//                ForEach(detailList.details) { (detail) in
+//                    if (!self.detailList.isLikedOnly || detail.isLiked) {
+//                        NavigationLink(destination: DetailView(detail: detail)) {
+//                            Row(detail: detail)
+//                        }
+//                    }
+//                }
             }
         }.navigationBarTitle(Text("Items"))
     }
@@ -50,6 +51,8 @@ struct ListSampleView: View {
 
 struct ListSampleView_Previews: PreviewProvider {
     static var previews: some View {
-        ListSampleView().environmentObject(DetailList())
+        let taro = Detail(id: 1, name: "Taro")
+        let detailList = DetailList(details: [taro])
+        return ListSampleView().environmentObject(detailList)
     }
 }

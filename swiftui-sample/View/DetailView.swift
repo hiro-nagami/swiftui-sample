@@ -8,38 +8,43 @@
 
 import SwiftUI
 
-struct DetailView: View {
-    @EnvironmentObject var detailList: DetailList
-    var detail: Detail
-
-    var detailIndex: Int {
-        detailList.details.firstIndex(where: { $0.id == detail.id })!
-    }
+struct DetailView: DetailPresenterOutput, View {
+    var presenter: DetailPresenter
 
     var body: some View {
-        HStack {
-            Text("\(detail.id)")
-            Text(detail.name)
-            Button(action: {
-                self.detailList.details[self.detailIndex].isLiked.toggle()
-            }) {
-                if (self.detailList.details[self.detailIndex].isLiked) {
-                    Rectangle()
-                        .frame(width: 20, height: 20, alignment: .center)
-                        .foregroundColor(.yellow)
-                } else {
-                    Rectangle()
-                        .frame(width: 20, height: 20, alignment: .center)
-                        .foregroundColor(.clear)
-                        .border(Color.yellow)
+        VStack {
+            HStack {
+                Text("\(self.presenter.detail.id)")
+                Text(self.presenter.detail.name)
+                Button(action: {
+                    self.presenter.toggleLike()
+                }) {
+                    if (self.presenter.detail.isLiked) {
+                        Rectangle()
+                            .frame(width: 20, height: 20, alignment: .center)
+                            .foregroundColor(.yellow)
+                    } else {
+                        Rectangle()
+                            .frame(width: 20, height: 20, alignment: .center)
+                            .foregroundColor(.clear)
+                            .border(Color.yellow)
+                    }
                 }
             }
+            Spacer()
         }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(detail: Detail(id: 0, name: "dummy"))
+        let taro = Detail(id: 1, name: "Taro")
+        let detailList = DetailList(details: [taro])
+        let detail = detailList.details[0]
+        let presenter = DetailPresenterImpl(detail: detail, detailList: detailList)
+        let view = DetailView(presenter: presenter)
+        presenter.inject(view: view)
+
+        return view
     }
 }
