@@ -37,9 +37,9 @@ struct ListSampleView: View {
 
                 ForEach(detailList.details) { (detail) in
                     if (!self.detailList.isLikedOnly || detail.isLiked) {
-                        NavigationLink(destination: DetailView(detail: detail)) {
+//                        NavigationLink(destination: DetailView(detail: detail)) {
                             Row(detail: detail)
-                        }
+//                        }
                     }
                 }
             }
@@ -50,6 +50,8 @@ struct ListSampleView: View {
 
 struct ListSampleView_Previews: PreviewProvider {
     static var previews: some View {
-        ListSampleView().environmentObject(DetailList())
+        let taro = Detail(id: 1, name: "Taro")
+        let detailList = DetailList(details: [taro])
+        return ListSampleView().environmentObject(detailList)
     }
 }

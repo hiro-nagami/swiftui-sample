@@ -10,8 +10,9 @@ import Combine
 
 class DetailList: ObservableObject {
     @Published var isLikedOnly: Bool = false
-    @Published var details: [Detail] =  [
-       Detail(id: 1, name: "Taro"),
-       Detail(id: 2, name: "Hanako")
-   ]
+    @Published var details: [Detail]
+
+    init(details: [Detail]) {
+        self.details = details
+    }
 }
