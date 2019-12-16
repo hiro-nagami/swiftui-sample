@@ -45,7 +45,7 @@ struct SampleListView: View {
     }
 
     func observableSampleView() -> some View {
-        let model = ObservableModel()
-        return ObservableSampleView(model: model)
+        let light = LightModel()
+        return LightSampleView(light: light)
     }
 }

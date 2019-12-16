@@ -10,18 +10,18 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct ObservableSampleView: View {
-    @ObservedObject var model: ObservableModel
+struct LightSampleView: View {
+    @ObservedObject var light: LightModel
 //    @ObservedObject(initialValue: ObservableModel()) var model: ObservableModel
 
     var body: some View {
         VStack {
             Button(action: {
-                self.model.isSelected = !self.model.isSelected
+                self.light.isTurnOn = !self.light.isTurnOn
             }) {
                 Text("Change Color")
             }
-            Circle().foregroundColor(model.isSelected ? .blue : .yellow)
+            Circle().foregroundColor(self.light.isTurnOn ? .blue : .yellow)
         }
     }
 }

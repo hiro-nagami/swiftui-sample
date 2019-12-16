@@ -1,25 +1,15 @@
 //
-//  DataPresenter.swift
+//  DetailPresenterImpl.swift
 //  swiftui-sample
 //
-//  Created by Nagamine Hiromasa on 2019/12/13.
+//  Created by Nagamine Hiromasa on 2019/12/16.
 //  Copyright © 2019 hiro. All rights reserved.
 //
 
+import Foundation
 import Combine
 import SwiftUI
 
-protocol DetailPresenter {
-    var detail: Detail { get }
-    var detailList: DetailList { get }
-    var detailIndex: Int { get }
-    
-    func toggleLike()
-}
-
-protocol DetailPresenterOutput {
-    var presenter: DetailPresenter { get }
-}
 
 class DetailPresenterImpl: DetailPresenter {
     @ObservedObject internal var detailList: DetailList
