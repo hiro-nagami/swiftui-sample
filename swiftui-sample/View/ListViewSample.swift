@@ -31,18 +31,17 @@ struct ListSampleView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("test")
-//                Toggle(isOn: $detailList.isLikedOnly) {
-//                    Text("Filter only liked items")
-//                }
+                Toggle(isOn: $detailList.isLikedOnly) {
+                    Text("Filter only liked items")
+                }
 
-//                ForEach(detailList.details) { (detail) in
-//                    if (!self.detailList.isLikedOnly || detail.isLiked) {
+                ForEach(detailList.details) { (detail) in
+                    if (!self.detailList.isLikedOnly || detail.isLiked) {
 //                        NavigationLink(destination: DetailView(detail: detail)) {
-//                            Row(detail: detail)
+                            Row(detail: detail)
 //                        }
-//                    }
-//                }
+                    }
+                }
             }
         }.navigationBarTitle(Text("Items"))
     }
