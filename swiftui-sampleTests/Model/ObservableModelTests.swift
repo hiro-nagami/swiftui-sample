@@ -37,7 +37,7 @@ class ObservableModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testLightModel() {
         let light = LightModel()
         let presenter = LightSamplePresenterImpl(light: light)
         let view = ViewMock(presenter: presenter)

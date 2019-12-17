@@ -13,21 +13,22 @@ struct SampleListView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: observableSampleView()) {
-                    Text("Observable Sample")
+                NavigationLink(destination: lightSampleView()) {
+                    Text("Light Sample (Observable & Clean Architecture)")
                 }
 
                 NavigationLink(destination: detailListView()) {
-                    Text("Detail List Sample")
+                    Text("Detail List Sample (EnvironmentObject)")
                 }
 
                 NavigationLink(destination: ZStackSampleView()) {
-                    Text("Detail List Sample")
+                    Text("ZStack Sample")
                 }
 
                 NavigationLink(destination: toggleSampleView()) {
                     Text("Toggle Sample")
                 }
+                
             }
         }.navigationBarTitle(Text("Sample"))
     }
@@ -44,8 +45,11 @@ struct SampleListView: View {
         return ListSampleView().environmentObject(detailList)
     }
 
-    func observableSampleView() -> some View {
+    func lightSampleView() -> some View {
         let light = LightModel()
-        return LightSampleView(light: light)
+        let lightSamplePresenter = LightSamplePresenterImpl(light: light)
+        let view = LightSampleView(presenter: lightSamplePresenter)
+        lightSamplePresenter.inject(view: view)
+        return view
     }
 }
