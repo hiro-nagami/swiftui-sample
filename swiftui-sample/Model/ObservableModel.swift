@@ -9,10 +9,10 @@
 import Foundation
 import Combine
 
-class ObservableModel: ObservableObject {
-    var objectWillChange = PassthroughSubject<ObservableModel, Never>()
+class LightModel: ObservableObject {
+    var objectWillChange = PassthroughSubject<LightModel, Never>()
 
-    var isSelected: Bool = false {
+    var isTurnOn: Bool = false {
         didSet {
             self.objectWillChange.send(self)
         }

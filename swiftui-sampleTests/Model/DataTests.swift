@@ -1,5 +1,5 @@
 //
-//  DataTest.swift
+//  DataTests.swift
 //  swiftui-sampleTests
 //
 //  Created by Nagamine Hiromasa on 2019/12/13.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class DataTest: XCTestCase {
+class DataTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
