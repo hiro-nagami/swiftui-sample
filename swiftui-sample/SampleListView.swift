@@ -28,7 +28,11 @@ struct SampleListView: View {
                 NavigationLink(destination: toggleSampleView()) {
                     Text("Toggle Sample")
                 }
-                
+
+                NavigationLink(destination: StateSampleView()) {
+                    Text("State Sample")
+                }
+
             }
         }.navigationBarTitle(Text("Sample"))
     }
