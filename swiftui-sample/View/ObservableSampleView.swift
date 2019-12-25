@@ -10,9 +10,18 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct LightSampleView: View {
+struct LightSampleView: View, LightSamplePresenterOutput {
     @ObservedObject var light: LightModel
-//    @ObservedObject(initialValue: ObservableModel()) var model: ObservableModel
+    var presenter: LightSamplePresenter
+
+    init(presenter: LightSamplePresenter) {
+        self.presenter = presenter
+        self.light = presenter.light
+    }
+
+    func didUpdateLightColor(color: Color) {
+
+    }
 
     var body: some View {
         VStack {

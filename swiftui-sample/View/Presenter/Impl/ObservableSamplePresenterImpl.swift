@@ -19,7 +19,8 @@ class LightSamplePresenterImpl: LightSamplePresenter {
     init(light: LightModel) {
         self.light = light
         self.cancellable = self.light.objectWillChange.sink { currentLight in
-            self.view?.didUpdateLightColor(color: currentLight.isTurnOn ? .yellow : .black)
+            let color: Color = currentLight.isTurnOn ? .yellow : .black
+            self.view?.didUpdateLightColor(color: color)
         }
     }
 
