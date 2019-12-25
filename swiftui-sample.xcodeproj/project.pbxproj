@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E8040BC1239B61BA00E4DABF /* DetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8040BC0239B61BA00E4DABF /* DetailList.swift */; };
+		E842DB6023B2E0880022FD06 /* StateSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E842DB5F23B2E0880022FD06 /* StateSampleView.swift */; };
 		E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C48238F4B0000CCE188 /* ZStackSample.swift */; };
 		E8542C4B238F4B7000CCE188 /* ListViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4A238F4B7000CCE188 /* ListViewSample.swift */; };
 		E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4C238F53A200CCE188 /* DetailView.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		E8040BC0239B61BA00E4DABF /* DetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailList.swift; sourceTree = "<group>"; };
+		E842DB5F23B2E0880022FD06 /* StateSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSampleView.swift; sourceTree = "<group>"; };
 		E8542C48238F4B0000CCE188 /* ZStackSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSample.swift; sourceTree = "<group>"; };
 		E8542C4A238F4B7000CCE188 /* ListViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewSample.swift; sourceTree = "<group>"; };
 		E8542C4C238F53A200CCE188 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				E889FF122388F38200FEBC2D /* AppDelegate.swift */,
 				E889FF142388F38200FEBC2D /* SceneDelegate.swift */,
+				E8FA43ED23A710B500D79FB8 /* SampleListView.swift */,
 				E8933B10239B570200343AD5 /* Model */,
 				E8933B0F239B56F200343AD5 /* View */,
 				E889FF182388F38500FEBC2D /* Assets.xcassets */,
@@ -188,7 +191,7 @@
 				E8933B0D239B40C400343AD5 /* ToggleSampleView.swift */,
 				E8542C4C238F53A200CCE188 /* DetailView.swift */,
 				E8FA43E623A6FC0F00D79FB8 /* ObservableSampleView.swift */,
-				E8FA43ED23A710B500D79FB8 /* SampleListView.swift */,
+				E842DB5F23B2E0880022FD06 /* StateSampleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */,
 				E889FF152388F38200FEBC2D /* SceneDelegate.swift in Sources */,
 				E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */,
+				E842DB6023B2E0880022FD06 /* StateSampleView.swift in Sources */,
 				E8FA43EE23A710B500D79FB8 /* SampleListView.swift in Sources */,
 				E8933B14239B574500343AD5 /* ToggleSampleModel.swift in Sources */,
 				E8F6C0D223A3016500260773 /* DetailPresenter.swift in Sources */,

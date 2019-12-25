@@ -8,10 +8,9 @@
 
 import Foundation
 import SwiftUI
-import Combine
 
 struct LightSampleView: View, LightSamplePresenterOutput {
-    @ObservedObject var light: LightModel
+    @ObservedObject private var light: LightModel
     var presenter: LightSamplePresenter
 
     init(presenter: LightSamplePresenter) {
