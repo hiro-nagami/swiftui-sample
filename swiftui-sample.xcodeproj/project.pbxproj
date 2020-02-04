@@ -12,6 +12,7 @@
 		E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C48238F4B0000CCE188 /* ZStackSample.swift */; };
 		E8542C4B238F4B7000CCE188 /* ListViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4A238F4B7000CCE188 /* ListViewSample.swift */; };
 		E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4C238F53A200CCE188 /* DetailView.swift */; };
+		E86FEBAE23E9071800F99229 /* UIColor+Darkmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86FEBAD23E9071800F99229 /* UIColor+Darkmode.swift */; };
 		E889FF132388F38200FEBC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889FF122388F38200FEBC2D /* AppDelegate.swift */; };
 		E889FF152388F38200FEBC2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889FF142388F38200FEBC2D /* SceneDelegate.swift */; };
 		E889FF192388F38500FEBC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E889FF182388F38500FEBC2D /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		E8542C48238F4B0000CCE188 /* ZStackSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSample.swift; sourceTree = "<group>"; };
 		E8542C4A238F4B7000CCE188 /* ListViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewSample.swift; sourceTree = "<group>"; };
 		E8542C4C238F53A200CCE188 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E86FEBAD23E9071800F99229 /* UIColor+Darkmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Darkmode.swift"; sourceTree = "<group>"; };
 		E889FF0F2388F38200FEBC2D /* swiftui-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E889FF122388F38200FEBC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E889FF142388F38200FEBC2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				E889FF1D2388F38500FEBC2D /* LaunchScreen.storyboard */,
 				E889FF202388F38500FEBC2D /* Info.plist */,
 				E889FF1A2388F38500FEBC2D /* Preview Content */,
+				E86FEBAD23E9071800F99229 /* UIColor+Darkmode.swift */,
 			);
 			path = "swiftui-sample";
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86FEBAE23E9071800F99229 /* UIColor+Darkmode.swift in Sources */,
 				E889FF132388F38200FEBC2D /* AppDelegate.swift in Sources */,
 				E8040BC1239B61BA00E4DABF /* DetailList.swift in Sources */,
 				E8FA43E923A6FD5600D79FB8 /* ObservableModel.swift in Sources */,
