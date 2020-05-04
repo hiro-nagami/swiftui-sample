@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E8040BC1239B61BA00E4DABF /* DetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8040BC0239B61BA00E4DABF /* DetailList.swift */; };
+		E810E554245EA3CD005AD4B0 /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E553245EA3CD005AD4B0 /* SimpleList.swift */; };
+		E810E556245EA51C005AD4B0 /* SimpleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E555245EA51C005AD4B0 /* SimpleRow.swift */; };
+		E810E559245EAC23005AD4B0 /* Production.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E558245EAC23005AD4B0 /* Production.swift */; };
 		E842DB6023B2E0880022FD06 /* StateSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E842DB5F23B2E0880022FD06 /* StateSampleView.swift */; };
 		E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C48238F4B0000CCE188 /* ZStackSample.swift */; };
 		E8542C4B238F4B7000CCE188 /* ListViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8542C4A238F4B7000CCE188 /* ListViewSample.swift */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		E8040BC0239B61BA00E4DABF /* DetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailList.swift; sourceTree = "<group>"; };
+		E810E553245EA3CD005AD4B0 /* SimpleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
+		E810E555245EA51C005AD4B0 /* SimpleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRow.swift; sourceTree = "<group>"; };
+		E810E558245EAC23005AD4B0 /* Production.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
 		E842DB5F23B2E0880022FD06 /* StateSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSampleView.swift; sourceTree = "<group>"; };
 		E8542C48238F4B0000CCE188 /* ZStackSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSample.swift; sourceTree = "<group>"; };
 		E8542C4A238F4B7000CCE188 /* ListViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewSample.swift; sourceTree = "<group>"; };
@@ -120,6 +126,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E810E557245EAC0D005AD4B0 /* SimpleListSample */ = {
+			isa = PBXGroup;
+			children = (
+				E810E553245EA3CD005AD4B0 /* SimpleList.swift */,
+				E810E555245EA51C005AD4B0 /* SimpleRow.swift */,
+				E810E558245EAC23005AD4B0 /* Production.swift */,
+			);
+			path = SimpleListSample;
+			sourceTree = "<group>";
+		};
 		E889FF062388F38200FEBC2D = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +211,7 @@
 				E8542C4C238F53A200CCE188 /* DetailView.swift */,
 				E8FA43E623A6FC0F00D79FB8 /* ObservableSampleView.swift */,
 				E842DB5F23B2E0880022FD06 /* StateSampleView.swift */,
+				E810E557245EAC0D005AD4B0 /* SimpleListSample */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,13 +398,16 @@
 				E889FF132388F38200FEBC2D /* AppDelegate.swift in Sources */,
 				E8040BC1239B61BA00E4DABF /* DetailList.swift in Sources */,
 				E8FA43E923A6FD5600D79FB8 /* ObservableModel.swift in Sources */,
+				E810E556245EA51C005AD4B0 /* SimpleRow.swift in Sources */,
 				E8FA43E723A6FC0F00D79FB8 /* ObservableSampleView.swift in Sources */,
 				E8933B0E239B40C400343AD5 /* ToggleSampleView.swift in Sources */,
 				E8FA43F723A7910A00D79FB8 /* ObservableSamplePresenter.swift in Sources */,
 				E8FA43F423A7907800D79FB8 /* DetailPresenterImpl.swift in Sources */,
 				E8FA43F923A7915000D79FB8 /* ObservableSamplePresenterImpl.swift in Sources */,
 				E8542C4D238F53A200CCE188 /* DetailView.swift in Sources */,
+				E810E559245EAC23005AD4B0 /* Production.swift in Sources */,
 				E889FF152388F38200FEBC2D /* SceneDelegate.swift in Sources */,
+				E810E554245EA3CD005AD4B0 /* SimpleList.swift in Sources */,
 				E8542C49238F4B0000CCE188 /* ZStackSample.swift in Sources */,
 				E842DB6023B2E0880022FD06 /* StateSampleView.swift in Sources */,
 				E8FA43EE23A710B500D79FB8 /* SampleListView.swift in Sources */,
