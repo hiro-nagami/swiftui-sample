@@ -33,8 +33,35 @@ struct SampleListView: View {
                     Text("State Sample")
                 }
 
+                Button("Show color code (iOS 13)") {
+                    switch UITraitCollection.current.userInterfaceStyle {
+                    case .dark:
+                        print("----- Dark Mode -----")
+                    case .light:
+                        print("----- Light Mode -----")
+                    default:
+                        print("----- Normal Mode -----")
+                    }
+
+                    self.showColor(colorName: "systemRed", color: .systemRed)
+                    self.showColor(colorName: "systemYellow", color: .systemYellow)
+                    self.showColor(colorName: "systemGray", color: .systemGray)
+                }
+
+                Button("Show logging sample") {
+                    let numbers = 1...5
+
+                    print(numbers)
+                    debugPrint(numbers)
+                    dump(numbers)
+                }
+
             }
         }.navigationBarTitle(Text("Sample"))
+    }
+
+    func showColor(colorName: String, color: UIColor) {
+        print("\(colorName): rgba(\(color.rgba.0), \(color.rgba.1), \(color.rgba.2), \(color.rgba.3))")
     }
 
     func toggleSampleView() -> some View {
