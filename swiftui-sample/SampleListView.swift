@@ -48,6 +48,14 @@ struct SampleListView: View {
                     self.showColor(colorName: "systemGray", color: .systemGray)
                 }
 
+                Button("Show logging sample") {
+                    let numbers = 1...5
+
+                    print(numbers)
+                    debugPrint(numbers)
+                    dump(numbers)
+                }
+
             }
         }.navigationBarTitle(Text("Sample"))
     }
